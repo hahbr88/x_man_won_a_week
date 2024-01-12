@@ -3,7 +3,9 @@ function calculateSum(data) {
 }
 
 function updateDisplay(sum) {
-  document.getElementById("totalSum").innerText = `Total: ${sum} 원`;
+  document.getElementById(
+    "totalSum"
+  ).innerText = `Total: ${sum.toLocaleString()} 원`;
 }
 
 function handleInputChange() {
