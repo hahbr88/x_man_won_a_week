@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>얼마치 먹었냐?</title>
+    <meta charset="utf-8" />
+    <link type="text/css" href="./output.css" rel="stylesheet" />
+    <link type="text/css" href="./other.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="font-[Sunflower]">
+    <div class="p-[24px] text-[16px]">
+      <div class="font-medium w-60 mb-4">해당 요일에 쓴 금액을 입력해요</div>
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2 text-sky-700">
+          <label class="min-w-10" for="monday">MON</label>
+          <input
+            class="flex-auto border-2 border-sky-700 border-solid h-10 p-4 rounded hide-spin-buttons"
+            id="monday"
+            type="number" />
+        </div>
+        <div class="flex items-center gap-2 text-red-700">
+          <label class="min-w-10" for="monday">TUE</label>
+          <input
+            class="flex-auto border-2 border-red-700 border-solid h-10 p-4 rounded hide-spin-buttons"
+            id="tuesday"
+            type="number" />
+        </div>
+        <div class="flex items-center gap-2 text-lime-700">
+          <label class="min-w-10" for="monday">WEN</label>
+          <input
+            class="flex-auto border-2 border-lime-700 border-solid h-10 p-4 rounded hide-spin-buttons"
+            id="wednesday"
+            type="number" />
+        </div>
+        <div class="flex items-center gap-2 text-violet-700">
+          <label class="min-w-10" for="monday">THU</label>
+          <input
+            class="flex-auto border-2 border-violet-700 border-solid h-10 p-4 rounded hide-spin-buttons"
+            id="thursday"
+            type="number" />
+        </div>
+        <div class="flex items-center gap-2 text-amber-700">
+          <label class="min-w-10" for="monday">FRI</label>
+          <input
+            class="flex-auto border-2 border-amber-700 border-solid h-10 p-4 rounded hide-spin-buttons"
+            id="friday"
+            type="number" />
+        </div>
+        <div class="flex justify-end">
+          <h2 id="totalSum">Total: 0 원</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
