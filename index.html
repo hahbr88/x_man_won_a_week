@@ -1,4 +1,4 @@
-<html>
+<html class="h-fit">
   <head>
     <title>얼마치 먹었냐?</title>
     <meta charset="utf-8" />
@@ -10,8 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap"
       rel="stylesheet" />
   </head>
-  <body class="font-[Sunflower]">
-    <div class="p-[24px] text-[16px]">
+  <body
+    class="font-[Sunflower] border-2 border-solid border-cyan-700 w-[350px]">
+    <div
+      class="p-[24px] text-[16px] h-fit border-2 border-solid border-red-700">
+      <div class="mb-6">
+        <div>이번 주는 총 얼마 쓰실거에요?</div>
+        <input
+          class="flex-auto w-full border-2 border-solid h-10 p-4 rounded hide-spin-buttons"
+          id="budget"
+          type="number" />
+      </div>
       <div class="font-medium w-60 mb-4">해당 요일에 쓴 금액을 입력해요</div>
       <div class="flex flex-col gap-2">
         <div class="flex items-center gap-2 text-sky-700">
@@ -49,7 +58,7 @@
             id="friday"
             type="number" />
         </div>
-        <div class="flex justify-end">
+        <div class="flex justify-end mt-4">
           <h2 id="totalSum">Total: 0 원</h2>
         </div>
       </div>
