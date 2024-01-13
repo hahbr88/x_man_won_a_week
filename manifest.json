@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "X만원으로 일주일 점심 해결하기",
   "description": "Base Level Extension",
-  "version": "1.0",
+  "version": "1.01",
   "action": {
     "default_popup": "index.html",
     "default_icon": "hello_extensions.png"
