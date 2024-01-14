@@ -40,7 +40,7 @@ const handleInputChange = () => {
 
   updateDisplay(sum);
 
-  localStorage.setItem("weeklyNumbers", JSON.stringify(data));
+  localStorage.setItem("weeklyPrices", JSON.stringify(data));
 };
 
 document.getElementById("budget").addEventListener("change", setBudget);
@@ -49,8 +49,30 @@ document.getElementById("budget").addEventListener("change", setBudget);
   document.getElementById(day).addEventListener("change", handleInputChange);
 });
 
+const resetValues = () => {
+  if (confirm("일주일치 금액을 초기화합니다.")) {
+    const data = {
+      monday: "",
+      tuesday: "",
+      wednesday: "",
+      thursday: "",
+      friday: "",
+    };
+
+    Object.keys(data).forEach((day) => {
+      document.getElementById(day).value = "";
+    });
+
+    updateDisplay(0);
+
+    localStorage.removeItem("weeklyPrices");
+  }
+};
+
+document.getElementById("resetButton").addEventListener("click", resetValues);
+
 document.addEventListener("DOMContentLoaded", () => {
-  const savedData = JSON.parse(localStorage.getItem("weeklyNumbers")) || {};
+  const savedData = JSON.parse(localStorage.getItem("weeklyPrices")) || {};
   ["monday", "tuesday", "wednesday", "thursday", "friday"].forEach((day) => {
     if (savedData[day]) {
       document.getElementById(day).value = savedData[day];

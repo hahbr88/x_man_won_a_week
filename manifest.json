@@ -1,10 +1,14 @@
 {
   "manifest_version": 3,
   "name": "X만원으로 일주일 점심 해결하기",
-  "description": "Base Level Extension",
-  "version": "1.01",
+  "description": "하병노가 쓰려고 만듬",
+  "version": "1.02",
+  "icons": {
+    "16": "images/logo_icon_16.png",
+    "128": "images/logo_icon_128.png"
+  },
   "action": {
     "default_popup": "index.html",
-    "default_icon": "hello_extensions.png"
+    "default_icon": "images/logo_icon_16.png"
   }
 }
